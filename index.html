@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+
+    <script src="icons/socialmedia/SVG/grunticon.loader.js">
+        // grunticon(["icons/socialmedia/SVG/icons.data.svg.css", "icons/socialmedia/SVG/icons.data.png.css", "icons/socialmedia/SVG/icons.fallback.css"]);
+    </script>
+
+</head>
+
+<body>
+
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+    <header id="site-header" class="masthead">
+        <div class="site-branding">
+            <figure class="header-bg">
+
+                <img class="inject-me" data-src="icons/misc/header-bg.svg" alt="Vectors and Paths: An SVG Example">
+                <noscript>
+                    <img src="icons/misc/header-bg.png" alt="Vectors and Paths: An SVG Example">
+                </noscript>
+            </figure>
+            <!-- <h1 class="site-title">Vectors <span class="fancy-and">&amp;</span> Paths</h1> -->
+        </div><!-- .site-branding -->
+        <nav id="site-navigation" class="main-nav" role="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                         <svg class="menu-icon">
+                             <use xlink:href="icons/icomoon-sprite.svg#icon-home"></use>
+                         </svg>
+                        <!-- <img class="menu-icon" src="icons/menu/PNG/home.png" alt="Link to home page"> -->
+                        <div>
+                            Home
+                            <span class="menu-desc">where the heart is</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="menu-icon">
+                            <use xlink:href="icons/icomoon-sprite.svg#icon-learn"></use>
+                        </svg>
+                        <!-- <img class="menu-icon" src="icons/menu/PNG/learn.png"> -->
+                        <div>
+                            Knowledge
+                            <span class="menu-desc">is power</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="menu-icon">
+                            <use xlink:href="icons/icomoon-sprite.svg#icon-thoughts"></use>
+                        </svg>
+                        <div>
+                            Thoughts
+                            <span class="menu-desc">absorb us</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="menu-icon">
+                            <use xlink:href="icons/icomoon-sprite.svg#icon-discourse"></use>
+                        </svg>
+                        <div>
+                            Discourse
+                            <span class="menu-desc">makes shared ideas</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav><!-- #site-navigation -->
+    </header><!-- #site-header .masthead -->
+
+    <main id="content" class="main-content centered">
+        <div class="featured">
+            Big logo goes here
+        </div><!-- .featured -->
+        <article class="story">
+            <h2 class="story-title">Where the River Runs</h2>
+            <div class="story-meta">
+			    <span class="byline">by <span class="author vcard"><a class="url fn n" href="https://lynda.com/mor10/">Morten Rand-Hendriksen</a></span>, </span>
+                <span class="posted-on">Published <time class="entry-date published" datetime="2016-06-04T16:51:16+00:00">June 4, 2016</time>, </span>
+                <span class="tagged">Tags: <a class="tag" href="#">thoughts</a>, <a class="tag" href="#">rivers</a></span>
+            </div><!-- .story-meta -->
+            <div class="excerpt">
+                <p>Whole wound wrote at whose to style in. Figure ye innate former do so we. Shutters but sir yourself provided you required his. So neither related he am do believe. Nothing but you hundred had use regular. Fat sportsmen arranging preferred can. Busy paid like is oh. Dinner our ask talent her age hardly. Neglected collected an attention listening do abilities. </p>
+            </div><!-- .excerpt -->
+        </article><!-- .story -->
+        <article class="story">
+            <h2 class="story-title">Hold the Wheel and Drive</h2>
+            <div class="story-meta">
+			    <span class="byline">by <span class="author vcard"><a class="url fn n" href="https://lynda.com/mor10/">Morten Rand-Hendriksen</a></span>, </span>
+                <span class="posted-on">Published <time class="entry-date published" datetime="2016-06-15T16:51:16+00:00">June 15, 2016</time>, </span>
+                <span class="tagged">Tags: <a class="tag" href="#">driving</a>, <a class="tag" href="#">road</a></span>
+            </div><!-- .story-meta -->
+            <div class="excerpt">
+                <p>Whole wound wrote at whose to style in. Figure ye innate former do so we. Shutters but sir yourself provided you required his. So neither related he am do believe. Nothing but you hundred had use regular. Fat sportsmen arranging preferred can. Busy paid like is oh. Dinner our ask talent her age hardly. Neglected collected an attention listening do abilities. </p>
+            </div><!-- .excerpt -->
+        </article><!-- .story -->
+    </main><!-- #main .main-content .centered -->
+
+    <footer id="colophon" class="footer-area centered">
+        <nav class="social-nav" role="navigation">
+            <ul>
+                <li><a class="icon-linkedin" href="https://linkedin.com"><span class="screen-reader-text">LinkedIn</span></a></li>
+                <li><a class="icon-twitter" href="https://twitter.com"><span class="screen-reader-text">Twitter</span></a></li>
+                <li><a class="icon-facebook" href="https://facebook.com"><span class="screen-reader-text">Facebook</span></a></li>
+                <li><a class="icon-instagram" href="https://instagram.com"><span class="screen-reader-text">Instagram</span></a></li>
+                <li><a class="icon-youtube" href="https://youtube.com"><span class="screen-reader-text">YouTube</span></a></li>
+            </ul>
+        </nav><!-- .social-nav -->
+    </footer><!-- #colophon .footer-area .centered -->
+
+    <script src="JS/svg-injector.min.js"></script>
+    <script>
+        //svgeezy.init(false, 'png');
+        // Elements to inject
+        var mySVGsToInject = document.querySelectorAll('img.inject-me');
+
+        // Options
+        var injectorOptions = {
+          evalScripts: 'once',
+          pngFallback: 'misc',
+          each: function (svg) {
+            // Callback after each SVG is injected
+            console.log('SVG injected: ' + svg.getAttribute('id'));
+          }
+        };
+
+        // Trigger the injection
+        SVGInjector(mySVGsToInject, injectorOptions, function (totalSVGsInjected) {
+          // Callback after all SVGs are injected
+          console.log('We injected ' + totalSVGsInjected + ' SVG(s)!');
+        });
+    </script>
+</body>
+
+</html>

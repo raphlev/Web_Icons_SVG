@@ -1,0 +1,25 @@
+{
+  "name": "svg",
+  "version": "1.0.0",
+  "description": "Experimental playground for the Lynda.com course",
+  "main": "index.html",
+  "scripts": {
+    "sprite": "spritesh --input icons/icomoon/SVG --output icons/icomoon-sprite.svg --prefix icon-",
+    "presprite": "svgo icons/icomoon/SVG"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mor10@bitbucket.org/mor10/svg.git"
+  },
+  "author": "Morten Rand-Hendriksen",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/mor10/svg#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-grunticon": "^2.2.3",
+    "grunt-svgmin": "^3.2.0",
+    "spritesh": "^1.2.0",
+    "svgo": "^0.6.6"
+  }
+}
