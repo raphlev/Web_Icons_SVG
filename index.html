@@ -31,9 +31,9 @@
             <ul>
                 <li>
                     <a href="#">
-                         <svg class="menu-icon">
-                             <use xlink:href="icons/icomoon-sprite.svg#icon-home"></use>
-                         </svg>
+                        <svg class="menu-icon">
+                            <use xlink:href="icons/icomoon-sprite.svg#icon-home"></use>
+                        </svg>
                         <!-- <img class="menu-icon" src="icons/menu/PNG/home.png" alt="Link to home page"> -->
                         <div>
                             Home
@@ -86,23 +86,34 @@
         <article class="story">
             <h2 class="story-title">Where the River Runs</h2>
             <div class="story-meta">
-			    <span class="byline">by <span class="author vcard"><a class="url fn n" href="https://lynda.com/mor10/">Morten Rand-Hendriksen</a></span>, </span>
-                <span class="posted-on">Published <time class="entry-date published" datetime="2016-06-04T16:51:16+00:00">June 4, 2016</time>, </span>
-                <span class="tagged">Tags: <a class="tag" href="#">thoughts</a>, <a class="tag" href="#">rivers</a></span>
+                <span class="byline">by <span class="author vcard"><a class="url fn n"
+                            href="https://lynda.com/mor10/">Morten Rand-Hendriksen</a></span>, </span>
+                <span class="posted-on">Published <time class="entry-date published"
+                        datetime="2016-06-04T16:51:16+00:00">June 4, 2016</time>, </span>
+                <span class="tagged">Tags: <a class="tag" href="#">thoughts</a>, <a class="tag"
+                        href="#">rivers</a></span>
             </div><!-- .story-meta -->
             <div class="excerpt">
-                <p>Whole wound wrote at whose to style in. Figure ye innate former do so we. Shutters but sir yourself provided you required his. So neither related he am do believe. Nothing but you hundred had use regular. Fat sportsmen arranging preferred can. Busy paid like is oh. Dinner our ask talent her age hardly. Neglected collected an attention listening do abilities. </p>
+                <p>Whole wound wrote at whose to style in. Figure ye innate former do so we. Shutters but sir yourself
+                    provided you required his. So neither related he am do believe. Nothing but you hundred had use
+                    regular. Fat sportsmen arranging preferred can. Busy paid like is oh. Dinner our ask talent her age
+                    hardly. Neglected collected an attention listening do abilities. </p>
             </div><!-- .excerpt -->
         </article><!-- .story -->
         <article class="story">
             <h2 class="story-title">Hold the Wheel and Drive</h2>
             <div class="story-meta">
-			    <span class="byline">by <span class="author vcard"><a class="url fn n" href="https://lynda.com/mor10/">Morten Rand-Hendriksen</a></span>, </span>
-                <span class="posted-on">Published <time class="entry-date published" datetime="2016-06-15T16:51:16+00:00">June 15, 2016</time>, </span>
+                <span class="byline">by <span class="author vcard"><a class="url fn n"
+                            href="https://lynda.com/mor10/">Morten Rand-Hendriksen</a></span>, </span>
+                <span class="posted-on">Published <time class="entry-date published"
+                        datetime="2016-06-15T16:51:16+00:00">June 15, 2016</time>, </span>
                 <span class="tagged">Tags: <a class="tag" href="#">driving</a>, <a class="tag" href="#">road</a></span>
             </div><!-- .story-meta -->
             <div class="excerpt">
-                <p>Whole wound wrote at whose to style in. Figure ye innate former do so we. Shutters but sir yourself provided you required his. So neither related he am do believe. Nothing but you hundred had use regular. Fat sportsmen arranging preferred can. Busy paid like is oh. Dinner our ask talent her age hardly. Neglected collected an attention listening do abilities. </p>
+                <p>Whole wound wrote at whose to style in. Figure ye innate former do so we. Shutters but sir yourself
+                    provided you required his. So neither related he am do believe. Nothing but you hundred had use
+                    regular. Fat sportsmen arranging preferred can. Busy paid like is oh. Dinner our ask talent her age
+                    hardly. Neglected collected an attention listening do abilities. </p>
             </div><!-- .excerpt -->
         </article><!-- .story -->
     </main><!-- #main .main-content .centered -->
@@ -110,11 +121,16 @@
     <footer id="colophon" class="footer-area centered">
         <nav class="social-nav" role="navigation">
             <ul>
-                <li><a class="icon-linkedin" href="https://linkedin.com"><span class="screen-reader-text">LinkedIn</span></a></li>
-                <li><a class="icon-twitter" href="https://twitter.com"><span class="screen-reader-text">Twitter</span></a></li>
-                <li><a class="icon-facebook" href="https://facebook.com"><span class="screen-reader-text">Facebook</span></a></li>
-                <li><a class="icon-instagram" href="https://instagram.com"><span class="screen-reader-text">Instagram</span></a></li>
-                <li><a class="icon-youtube" href="https://youtube.com"><span class="screen-reader-text">YouTube</span></a></li>
+                <li><a class="icon-linkedin" href="https://linkedin.com" data-grunticon-embed><span
+                            class="screen-reader-text">LinkedIn</span></a></li>
+                <li><a class="icon-twitter" href="https://twitter.com" data-grunticon-embed><span
+                            class="screen-reader-text">Twitter</span></a></li>
+                <li><a class="icon-facebook" href="https://facebook.com" data-grunticon-embed><span
+                            class="screen-reader-text">Facebook</span></a></li>
+                <li><a class="icon-instagram" href="https://instagram.com" data-grunticon-embed><span
+                            class="screen-reader-text">Instagram</span></a></li>
+                <li><a class="icon-youtube" href="https://youtube.com" data-grunticon-embed><span
+                            class="screen-reader-text">YouTube</span></a></li>
             </ul>
         </nav><!-- .social-nav -->
     </footer><!-- #colophon .footer-area .centered -->
@@ -127,18 +143,18 @@
 
         // Options
         var injectorOptions = {
-          evalScripts: 'once',
-          pngFallback: 'misc',
-          each: function (svg) {
-            // Callback after each SVG is injected
-            console.log('SVG injected: ' + svg.getAttribute('id'));
-          }
+            evalScripts: 'once',
+            pngFallback: 'misc',
+            each: function (svg) {
+                // Callback after each SVG is injected
+                console.log('SVG injected: ' + svg.getAttribute('id'));
+            }
         };
 
         // Trigger the injection
         SVGInjector(mySVGsToInject, injectorOptions, function (totalSVGsInjected) {
-          // Callback after all SVGs are injected
-          console.log('We injected ' + totalSVGsInjected + ' SVG(s)!');
+            // Callback after all SVGs are injected
+            console.log('We injected ' + totalSVGsInjected + ' SVG(s)!');
         });
     </script>
 </body>
