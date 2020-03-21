@@ -24,6 +24,12 @@ Set-ExecutionPolicy Unrestricted
 
 npm install
 
+# grunt must be installed globally
+
+https://gruntjs.com/getting-started
+
+npm install grunt-cli -g
+
 # Execute
 
 grunt
