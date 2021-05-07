@@ -15,7 +15,7 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/mor10/svg#readme",
   "devDependencies": {
-    "grunt": "^1.1.0",
+    "grunt": "^1.3.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-grunticon": "^2.3.2",
     "grunt-svgmin": "^6.0.0",
